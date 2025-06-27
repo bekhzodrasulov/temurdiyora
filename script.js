@@ -1,18 +1,36 @@
-const playButton = document.getElementById("playButton");
-const bgMusic = document.getElementById("bgMusic");
+const links = document.querySelectorAll('a[href^="#"]');
 
-playButton.addEventListener("click", () => {
-  if (bgMusic.paused) {
-    bgMusic.play();
-    playButton.textContent = "⏸"; // Pause icon
-  } else {
-    bgMusic.pause();
-    playButton.textContent = "▶"; // Play icon
-  }
+links.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
 });
 
+const elements = document.querySelectorAll(".animate");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add("visible");
+        }, index * 150); // задержка между появлениями
+      }
+    });
+  },
+  {
+    threshold: 0.1,
+  }
+);
+
+elements.forEach((el) => observer.observe(el));
+
 function updateCountdown() {
-  const weddingDate = new Date("2025-07-24T19:00:00");
+  const weddingDate = new Date("2025-07-22T19:00:00");
   const now = new Date();
   const diff = weddingDate - now;
 
@@ -37,21 +55,3 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
-
-const fadeElements = document.querySelectorAll(".fade-in");
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.2,
-  }
-);
-
-fadeElements.forEach((el) => observer.observe(el));
