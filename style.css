@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-Regular.woff2") format("woff2"),
+    url("DancingScript-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-Bold.woff2") format("woff2"),
+    url("DancingScript-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-Medium.woff2") format("woff2"),
+    url("DancingScript-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-SemiBold.woff2") format("woff2"),
+    url("DancingScript-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   margin: 0;
   font-family: "Cormorant Infant", serif;
@@ -10,6 +45,29 @@ body {
 }
 .wrapper {
   overflow: hidden;
+}
+
+.head-title {
+  font-family: "Dancing Script", serif;
+  font-size: 28px;
+}
+
+.couples-name {
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+}
+.wadding-date {
+  font-family: "Dancing Script", serif;
+}
+
+.wedding-title {
+  font-family: "Dancing Script", serif;
+  font-size: 24px;
+}
+
+.wedding-text {
+  font-family: "Dancing Script", serif;
+  font-size: 20px;
 }
 
 .invitation {
@@ -32,6 +90,39 @@ body {
 .column.green {
   background-color: #51785d;
   color: white;
+}
+
+.column p {
+  font-family: "Dancing Script", serif;
+}
+
+.column span {
+  font-family: "Dancing Script", serif;
+}
+
+.wedding-place {
+  font-family: "Dancing Script", serif;
+  font-size: 24px;
+}
+
+.restaurant-name {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+}
+
+.restaurant-address {
+  font-family: "Dancing Script", serif;
+  font-size: 22px;
+}
+
+.contacts-text {
+  font-family: "Dancing Script", serif;
+  font-size: 22px;
+}
+
+.closing-text {
+  font-family: "Dancing Script", serif;
+  font-size: 22px;
 }
 
 .border-box {
@@ -188,12 +279,6 @@ a {
   width: 100px;
   height: 100px;
   margin-top: 10px;
-}
-
-.wadding-date {
-  font-family: "Great Vibes", cursive;
-  font-size: 40px;
-  font-weight: 400;
 }
 
 /* Базовый класс для скрытых элементов */
