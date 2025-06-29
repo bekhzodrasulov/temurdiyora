@@ -48,7 +48,7 @@ body {
 }
 
 .head-title {
-  font-family: "Dancing Script", serif;
+  font-family: "Dancing Script", cursive;
   font-size: 28px;
 }
 
@@ -57,16 +57,16 @@ body {
   font-size: 28px;
 }
 .wadding-date {
-  font-family: "Dancing Script", serif;
+  font-family: "Dancing Script", cursive;
 }
 
 .wedding-title {
-  font-family: "Dancing Script", serif;
+  font-family: "Dancing Script", cursive;
   font-size: 24px;
 }
 
 .wedding-text {
-  font-family: "Dancing Script", serif;
+  font-family: "Dancing Script", cursive;
   font-size: 20px;
 }
 
@@ -93,15 +93,11 @@ body {
 }
 
 .column p {
-  font-family: "Dancing Script", serif;
-}
-
-.column span {
-  font-family: "Dancing Script", serif;
+  font-family: "Dancing Script", cursive;
 }
 
 .wedding-place {
-  font-family: "Dancing Script", serif;
+  font-family: "Dancing Script", cursive;
   font-size: 24px;
 }
 
@@ -111,17 +107,17 @@ body {
 }
 
 .restaurant-address {
-  font-family: "Dancing Script", serif;
+  font-family: "Dancing Script", cursive;
   font-size: 22px;
 }
 
 .contacts-text {
-  font-family: "Dancing Script", serif;
+  font-family: "Dancing Script", cursive;
   font-size: 22px;
 }
 
 .closing-text {
-  font-family: "Dancing Script", serif;
+  font-family: "Dancing Script", cursive;
   font-size: 22px;
 }
 
